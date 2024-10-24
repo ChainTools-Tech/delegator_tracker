@@ -1,30 +1,30 @@
 nodes:
   - name: "Acre"
     api_url: "https://rest.cosmos.directory:443/acrechain/"
-    base_denom: "aacre"  # Renamed to base_denom
-    display_denom: "ACRE"  # New field for the display denomination
+    base_denom: "aacre" 
+    display_denom: "ACRE"
     cmc_api_id: "18156"
     exponent: 18
     validators:
       - validator_id: "acrevaloper1jw8vaqyj5rphyxdf3etlmk65m2qnhpj57jajfp"
   - name: "Andromeda"
     api_url: "https://andromeda.api.kjnodes.com:443/"
-    base_denom: "uandr"  # Renamed to base_denom
-    display_denom: "ANDR"  # New field for the display denomination
+    base_denom: "uandr"
+    display_denom: "ANDR"
     cmc_api_id: "30437"
     validators:
       - validator_id: "andrvaloper1ttltkpcypkmtj5k7thzanqul2fwn86gvwcj6h9"
   - name: "AssetMantle"
     api_url: "https://rest.assetmantle.one:443/"
-    base_denom: "umntl"  # Renamed to base_denom
-    display_denom: "MNTL"  # New field for the display denomination
+    base_denom: "umntl"
+    display_denom: "MNTL"
     cmc_api_id: "19686"
     validators:
       - validator_id: "mantlevaloper18w60w6fnptk9dhqpl65mzrejmkt0vvr7u5qwp5"
   - name: "Beezee"
     api_url: "https://rest.getbze.com:443/"
-    base_denom: "ubze"  # Renamed to base_denom
-    display_denom: "BZE"  # New field for the display denomination
+    base_denom: "ubze"
+    display_denom: "BZE"
     cmc_api_id: "23860"
     validators:
       - validator_id: "bzevaloper1prm55vzlp5u6excqdunwlm4tw254cq943m6e6m"
