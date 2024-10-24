@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validator Metrics</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        table, th, td { border: 1px solid black; }
+        th, td { padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Validator Metrics</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Chain Name</th>
+                <th>Validator ID</th>
+                <th>Delegators</th>
+                <th>Total Stake</th>
+                <th>Denomination</th>
+                <th>Total Stake (USD)</th> <!-- New column for USD stake -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for validator in validators_data %}
+            <tr>
+                <td>{{ validator.chain_name }}</td>
+                <td>{{ validator.validator_id }}</td>
+                <td>{{ validator.delegators }}</td>
+                <td>{{ validator.total_stake }}</td>
+                <td>{{ validator.denom }}</td>
+                <td>${{ "{:,.2f}".format(validator.total_stake_usd) }}</td> <!-- Display formatted USD stake -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
